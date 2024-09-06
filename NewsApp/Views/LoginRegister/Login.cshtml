@@ -1,0 +1,32 @@
+﻿
+@{
+    ViewBag.Title = "Login";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@using (Html.BeginForm("Login", "LoginRegister"))
+{
+    <div class="login-register">
+        <div class="box">
+            <h4>Đăng nhập tài khoản của bạn</h4>
+            <br>
+            <div style="display: flex;align-items: center; ">
+                <i class="bi bi-envelope-at" style="font-size: 30px; margin-right: 15px;"></i>
+                <input type="text" name="Email" class="form-control" placeholder="Email" required>
+            </div>
+            <br>
+            <div style="display: flex;align-items: center; ">
+                <i class="bi bi-key" style="font-size: 30px; margin-right: 15px;"></i>
+                <input type="password" name="MatKhau" class="form-control" placeholder="Mật khẩu" required>
+            </div>
+                <p style="color: red;margin-left:50px">@ViewBag.ThongBao</p>
+            
+            <button type="submit" class="btn">Đăng nhập</button>
+            <div style="float: right;margin-top: 10px;">
+                <span>Bạn chưa có tài khoản ? </span>
+                <a href="@Url.Action("Register","LoginRegister")" style="color: var(--main-color);">Đăng ký ngay</a>
+            </div>
+        </div>
+    </div>
+}
+

@@ -1,0 +1,48 @@
+﻿@model IEnumerable<NewsApp.Models.NguoiDung>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Areas/AdminAreas/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            Tên người dùng
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Email)
+        </th>
+       
+        <th>
+            Ngày đăng ký
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.TenNguoiDung)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Email)
+        </td>
+       
+        <td>
+            @Html.DisplayFor(modelItem => item.NgayDangKy)
+        </td>
+        <td>
+            
+            @Html.ActionLink("Chi tiết", "Details", new { id=item.IDNguoiDung }) |
+            @Html.ActionLink("Xóa người dùng", "Delete", new { id=item.IDNguoiDung })
+        </td>
+    </tr>
+}
+
+</table>

@@ -1,0 +1,106 @@
+﻿@model NewsApp.Models.TinTuc
+
+@{
+    ViewBag.Title = "Edit";
+    Layout = "~/Areas/AdminAreas/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>Chỉnh sửa tin tức</h2>
+
+@using (Html.BeginForm("Edit", "TinTucs", FormMethod.Post, new { @enctype = "multipart/form-data" }))
+{
+    @Html.AntiForgeryToken()
+    
+<div class="form-horizontal">
+    <h4>TinTuc</h4>
+    <hr />
+    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+    @Html.HiddenFor(model => model.IDTinTuc)
+
+    <div class="form-group">
+        Tiêu đề
+        <div class="col-md-10">
+            @*@Html.EditorFor(model => model.TieuDe, new { htmlAttributes = new { @class = "form-control" } })*@
+            <textarea name="TieuDe" style="width:100%; font-weight:bold; font-size:20px" class="form-control">@Model.TieuDe</textarea>
+            @Html.ValidationMessageFor(model => model.TieuDe, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        Mô tả
+        <div class="col-md-10">
+            <textarea name="MoTa" style="width:100%; font-weight:bold; font-size:15px" class="form-control">@Model.MoTa</textarea>
+            @Html.ValidationMessageFor(model => model.MoTa, "", new { @class = "text-danger" })
+        </div>
+    </div>
+    <div class="form-group">
+        Hình ảnh
+        <div class="col-md-10">
+            <img src="~/Images/@Model.HinhAnh" style="width:30%" id="img_book_upload" alt="">
+            <input accept="~Content/Images/*" type="file" id="img_book_upload_btn" name="HinhAnhTin" value="@Model.HinhAnh">
+            <input type="hidden" name="HinhAnh" value="@Model.HinhAnh" id="img_name_file"/>
+            <script>
+                img_book_upload_btn.onchange = evt => {
+                    const [file] = img_book_upload_btn.files
+                    if (file) {
+                        img_book_upload.src = URL.createObjectURL(file)
+                        var imgValue = document.getElementById("img_book_upload_btn");
+                        var imgName = document.getElementById("img_name_file");
+                        imgName.value = imgValue.files[0].name
+                    }
+                }
+                
+            </script>
+        </div>
+    </div>
+
+    <div class="form-group">
+        Nội dung
+        <div class="col-md-10">
+            <textarea name="NoiDung" style="width:100%; height: 200px" class="form-control">@Model.NoiDung</textarea>
+            @Html.ValidationMessageFor(model => model.NoiDung, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+
+
+    <input type="hidden" name="NgayDang" value="@Model.NgayDang" />
+
+    <div class="form-group">
+        Hiển thị nổi bật
+        <div class="col-md-10">
+            <div class="checkbox">
+                @Html.EditorFor(model => model.NoiBat)
+                @Html.ValidationMessageFor(model => model.NoiBat, "", new { @class = "text-danger" })
+            </div>
+        </div>
+    </div>
+
+    <div class="form-group">
+        Nguồn
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.Nguon, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.Nguon, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        Danh mục
+        <div class="col-md-10">
+            @Html.DropDownList("IDDanhMuc", null, htmlAttributes: new { @class = "form-control" })
+            @Html.ValidationMessageFor(model => model.IDDanhMuc, "", new { @class = "text-danger" })
+        </div>
+        <input name="LuotXem" value="@Model.LuotXem" type="hidden" />
+    </div>
+
+    <div class="form-group">
+        <div class="col-md-offset-2 col-md-10">
+            <input type="submit" value="Lưu" class="btn btn-default" />
+        </div>
+    </div>
+</div>
+}
+
+<div>
+    @Html.ActionLink("Quay lại", "Index")
+</div>

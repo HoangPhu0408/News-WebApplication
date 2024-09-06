@@ -1,0 +1,59 @@
+﻿@model IEnumerable<NewsApp.Models.TinTuc>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Areas/AdminAreas/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>Quản lý tin tức</h2>
+
+<p>
+    @Html.ActionLink("Thêm tin mới", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            Tiêu đề
+        </th>
+        <th>
+            Mô tả
+        </th>
+        
+        <th>
+            Ngày đăng
+        </th>
+        
+        <th>
+            Nguồn
+        </th>
+        
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.TieuDe)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.MoTa)
+        </td>
+        
+       
+        <td>
+            @Html.DisplayFor(modelItem => item.NgayDang)
+        </td>
+        
+        <td>
+            @Html.DisplayFor(modelItem => item.Nguon)
+        </td>
+        
+        <td>
+            @Html.ActionLink("Chỉnh sửa", "Edit", new { id=item.IDTinTuc }) |
+            @*@Html.ActionLink("Xem chi tiết", "Edit", new { id=item.IDTinTuc }) |*@ 
+            @Html.ActionLink("Xóa", "Delete", new { id=item.IDTinTuc })
+        </td>
+    </tr>
+}
+
+</table>

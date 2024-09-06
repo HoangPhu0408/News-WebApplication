@@ -1,0 +1,190 @@
+﻿
+@{
+    ViewBag.Title = "News";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+
+}
+
+@*@ViewBag.TinTuc NewsApp.Models.TinTuc*@
+
+@{ var user = Session["Account"] as NewsApp.Models.NguoiDung;}
+<!-- container-news -->
+
+<div class="row" >
+    <div class="col-lg-9" style="position:relative">
+        @if (user != null)
+        {
+            using (Html.BeginForm("AddReadLater", "News"))
+            {
+                <input type="hidden" name="IDNguoiDung" value="@user.IDNguoiDung" />
+                <input type="hidden" name="IDTinTuc" value="@ViewBag.TinTuc.IDTinTuc" />
+                <button style="position:absolute; right:1px" class="save-news-btn"><i class="bi bi-bookmark"></i></button>
+            }
+
+        }
+        else
+        {
+            <a href="@Url.Action("Login","LoginRegister")" style="position:absolute; right:1px" class="save-news-btn"><i class="bi bi-bookmark"></i></a>
+
+        }
+
+        <div class="breadcumb-top">
+            <nav>
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">Tin tức</a></li>
+                    <li class="breadcrumb-item"><a href="#">@ViewBag.TinTuc.DanhMuc.TenDanhMuc</a></li>
+
+                </ol>
+            </nav>
+        </div>
+        <div class="title-new-top">
+            <h3>@ViewBag.TinTuc.TieuDe </h3>
+
+            <span>Ngày đăng : @ViewBag.TinTuc.NgayDang</span>
+        </div>
+
+        <div class="news-content-detail">
+            <h6>@ViewBag.TinTuc.MoTa</h6>
+            <p>@ViewBag.TinTuc.NoiDung.Substring(0, ViewBag.IndexOfDot)</p>
+            <!-- image -->
+
+            <div class="img-new-detail">
+                <img src="~/Images/@ViewBag.TinTuc.HinhAnh" width="100%" alt="">
+                <p>ảnh mô tả</p>
+            </div>
+            <!-- image -->
+
+        </div>
+
+        <p>@ViewBag.TinTuc.NoiDung.Substring(ViewBag.IndexOfDot + 1)</p>
+
+
+
+        <div class="cource-new">
+            <h6>Nguồn : @ViewBag.TinTuc.Nguon</h6>
+        </div>
+        <hr>
+
+        <div class="comment-box">
+            <h6>Bình luận</h6>
+
+            @if (user != null)
+            {
+                using (Html.BeginForm("AddComment", "News"))
+                {
+                    <div class="row">
+                        <div class="col-lg-1">
+                            <img src="~/Images/avatar.jpg" class="avatar-cicle" alt="">
+                        </div>
+                        <div class="col-lg-9">
+                            <textarea class="comment-input" name="NoiDung" placeholder="Viết bình luận của bạn" required></textarea>
+                        </div>
+                        <input type="hidden" name="IDNguoiDung" value="@user.IDNguoiDung" />
+
+                        <input type="hidden" name="IDTinTuc" value="@ViewBag.TinTuc.IDTinTuc" />
+
+                        <div class="col-lg-2">
+                            <button type="submit" class="btn btn-comment"><i class="bi bi-send-fill"></i></button>
+                        </div>
+                    </div>
+                }
+            }
+            else
+            {
+                <div>
+                    <div class="row">
+                        <div class="col-lg-1">
+                            <img src="~/Images/avatar.jpg" class="avatar-cicle" alt="">
+                        </div>
+                        <div class="col-lg-9">
+                            <textarea class="comment-input" name="NoiDung" placeholder="Viết bình luận của bạn" required></textarea>
+                        </div>
+
+
+                        <div class="col-lg-2">
+                            <a href="@Url.Action("Login","LoginRegister")" class="btn btn-comment"><i class="bi bi-send-fill"></i></a>
+                        </div>
+                    </div>
+                </div>
+            }
+
+
+            <div class="list-comment">
+
+
+                @foreach (var item in ViewBag.LstComment)
+                {
+                    <!-- item -->
+                    <div class="comment-item">
+                        <div class="user-cmt-infor">
+                            <div>
+                                <img src="~/Images/avatar.jpg" class="avatar-cicle" alt="">
+                                <span>@item.NguoiDung.TenNguoiDung</span>
+                            </div>
+                        </div>
+                        <div class="comment-content">
+                            <p>@item.NoiDung</p>
+
+                            <small style="color:gray">@item.NgayBinhLuan</small>
+                        </div>
+
+                    </div>
+                    <!-- end item -->
+                }
+
+            </div>
+        </div>
+
+
+
+    </div>
+    <div class="col-lg-3">
+        <div class="advertisement">
+            <div style="margin-bottom: 10px;">
+                <a href="@ViewBag.QuangCao[0].Link">
+                    <img src="~/Images/@ViewBag.QuangCao[0].HinhAnhQuangCao" alt="">
+
+                </a>
+            </div>
+            <div style="margin-bottom: 10px;">
+                <a href="@ViewBag.QuangCao[1].Link">
+                    <img src="~/Images/@ViewBag.QuangCao[1].HinhAnhQuangCao" alt="">
+
+                </a>
+            </div>
+
+
+        </div>
+
+
+        <div class="interested-new">
+            <div class="title-news-right">
+                <span>Tin liên quan</span>
+
+            </div>
+
+
+            @foreach (var item in ViewBag.RelatedNews)
+            {
+                <!-- new-item -->
+
+                <div class="new-item-right">
+                    <a href="@Url.Action("Index","News",  new { id = item.IDTinTuc })">
+                        <img src="~/Images/@item.HinhAnh" alt="">
+                        <div class="new-display-content">
+
+                            <h6 class="card-text" style="margin-bottom: 15px;" id="truncated-text-80">
+                                @item.NoiDung
+                            </h6>
+                        </div>
+
+                    </a>
+                </div>
+                <!-- end new-item -->
+            }
+
+        </div>
+    </div>
+</div>
+
+<!-- end-container -->

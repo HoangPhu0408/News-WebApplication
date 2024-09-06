@@ -1,0 +1,18 @@
+﻿<div class="dropdown-menu dropdown-nav" style="color: black;"
+     aria-labelledby="navbarDropdown">
+    <div class="row dropdown-content">
+
+        @foreach (var item in ViewBag.CategoryList)
+        {
+            <!-- item -->
+            <div class="dropdown-item col-lg-5 news-category-dropdowns">
+                <a class="" href="@Url.Action("GetNewsCategories","Categories",  new { idCate = item.IDDanhMuc })">@item.TenDanhMuc</a>
+            </div>
+            <!-- end-item -->
+        }
+
+
+    </div>
+
+
+</div>

@@ -1,0 +1,35 @@
+﻿@model NewsApp.Models.QuangCao
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Areas/AdminAreas/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>QuangCao</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Link)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Link)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.HinhAnhQuangCao)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.HinhAnhQuangCao)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.IDQuangCao }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

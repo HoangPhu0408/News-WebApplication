@@ -1,0 +1,24 @@
+﻿@model NewsApp.Models.NguoiDung
+
+@{
+    ViewBag.Title = "Delete";
+    Layout = "~/Areas/AdminAreas/Views/Shared/_AdminLayout.cshtml";
+}
+
+
+
+<h3>Bạn có chắc chắn muốn xóa người dùng @Model.Email</h3>
+<div>
+    <h4>NguoiDung</h4>
+    <hr />
+    
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Xóa" class="btn btn-default" /> |
+            @Html.ActionLink("Quay lại", "Index")
+        </div>
+    }
+</div>

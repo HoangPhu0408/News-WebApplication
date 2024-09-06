@@ -1,0 +1,76 @@
+﻿
+@{
+    ViewBag.Title = "GetReadLaterList";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<style>
+    .remove-related{
+        /*float:right;*/
+        /*position:absolute;
+        right:1px;
+        top:1px;*/
+        font-size:30px;
+        color:red;
+    }
+    .remove-related:hover{
+        color:red;
+    }
+</style>
+<div class="row">
+    <div class="col-lg-9">
+
+
+        <div class="news-list" style="margin: 80px 0px;">
+
+            <div class="title-news">
+                <span>Tin tức xem sau</span>
+            </div>
+
+            @foreach (var item in ViewBag.XemSau)
+            {
+                <!-- new-item -->
+                <div class="new-item row" style="position:relative">
+                    <a href="@Url.Action("Index","News",  new { id = item.IDTinTuc })" class="col-lg-10">
+                        <img src="~/Images/@item.TinTuc.HinhAnh" alt="">
+                        <div class="new-display-content">
+
+                            <h5 style="margin-bottom: 15px;" id="truncated-text-80">
+                                @item.TinTuc.TieuDe
+                            </h5>
+
+                            <p class="card-text">
+                                @item.TinTuc.NoiDung
+                            </p>
+                            <small style="color: gray;">@item.TinTuc.NgayDang</small>
+
+                        </div>
+
+                    </a>
+                    <a href="@Url.Action("RemoveReadLater","News",new { idReadLater = item.ID })")" class="remove-related col-lg-2" style="color:darkred" ><i class="bi bi-bookmark-x-fill"></i></a>
+                </div>
+                <!-- end new-item -->
+            }
+
+
+
+        </div>
+
+
+    </div>
+    <div class="col-lg-3">
+        <div class="advertisement">
+            <div style="margin-bottom: 10px;">
+                <img src="~/Images/ad1.jpg" alt="">
+            </div>
+            <div style="margin-bottom: 10px;">
+                <img src="https://huflit.edu.vn/wp-content/uploads/2023/07/387x260_Thumb.png" alt="">
+            </div>
+
+
+        </div>
+
+
+    </div>
+</div>
+<!-- end-container-news -->

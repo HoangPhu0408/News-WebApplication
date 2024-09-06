@@ -1,0 +1,41 @@
+﻿
+@{
+    ViewBag.Title = "Register";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@using (Html.BeginForm("Register", "LoginRegister"))
+{
+    <div class="login-register">
+        <div class="box">
+            <h4>Đăng ký tài khoản</h4>
+            <br>
+            <div style="display: flex;align-items: center; ">
+                <i class="bi bi-person" style="font-size: 30px; margin-right: 15px;"></i>
+                <input type="text" class="form-control" name="TenNguoiDung" placeholder="Tên của bạn" required>
+            </div>
+            <br>
+            <div style="display: flex;align-items: center; ">
+                <i class="bi bi-envelope-at" style="font-size: 30px; margin-right: 15px;"></i>
+                <input type="text" name="Email" class="form-control" placeholder="Email" required>
+            </div>
+            <br>
+            <div style="display: flex;align-items: center; ">
+                <i class="bi bi-key" style="font-size: 30px; margin-right: 15px;"></i>
+                <input type="password" name="MatKhau" class="form-control" placeholder="Mật khẩu" required>
+            </div><br>
+            <div style="display: flex;align-items: center; ">
+                <i class="bi bi-key" style="font-size: 30px; margin-right: 15px;"></i>
+                <input type="password" name="MatKhauXacNhan" class="form-control" placeholder="Nhập lại mật khẩu" required>
+            </div><br>
+            <p style="color: red;margin-left:50px">@ViewBag.ErrorRegister</p>
+
+            <button type="submit" class="btn">Đăng ký ngay</button>
+            <div style="float: right;margin-top: 10px;">
+                <span>Bạn đã có tài khoản ? </span>
+                <a href="#" style="color: var(--main-color);">Đăng nhập</a>
+            </div>
+        </div>
+    </div>
+}
+

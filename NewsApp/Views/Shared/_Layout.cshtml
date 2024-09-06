@@ -1,0 +1,202 @@
+﻿@{ var user = Session["Account"] as NewsApp.Models.NguoiDung;}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="~/Content/owl.carousel.min.css">
+    <link rel="stylesheet" href="~/Content/style.css">
+    <title>Trang chủ</title>
+</head>
+
+<body>
+    <!-- header -->
+    <div>
+        <div class="container ">
+            <div class="row top-header">
+                <div class="col-lg-3 logo">
+                    <a href="@Url.Action("Index","Home")"><img src="~/Images/logo.png" alt=""></a>
+                </div>
+                <div class="col-lg-6">
+                    <div style="display: flex">
+                        <div style=" margin: 10px;">
+                            <a class="hastag" href="@Url.Action("Index","Home")">
+                                <span style="color: var(--main-color); font-size: 20px;">#</span>
+                                <span>The Face</span>
+                            </a>
+                        </div>
+
+                        <div style=" margin: 10px;">
+                            <a class="hastag" href="#">
+                                <span style="color: var(--main-color); font-size: 20px;">#</span>
+                                <span>Rap Việt</span>
+                            </a>
+                        </div>
+
+                    </div>
+
+
+                </div>
+            </div>
+
+        </div>
+        <div class="container-fluid nav-bar">
+            <div class="container">
+                <div class="row nav">
+                    <div class="col-lg-6">
+                        <nav class="navbar navbar-expand-lg  nav-content">
+                            <a class="navbar-brand" href="@Url.Action("Index","Home")">
+                                <i class="bi bi-house-door-fill"></i>
+                            </a>
+
+                            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                                <div class="navbar-nav">
+                                    <div class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            Tin tức
+                                        </a>
+                                        @{ Html.RenderAction("CategoryPartial", "Categories"); }
+                                    </div>
+                                    <a class="nav-item nav-link" href="#">Âm nhạc</a>
+                                    <a class="nav-item nav-link" href="#">Đời sống</a>
+                                    <a class="nav-item nav-link" href="#">Thời trang</a>
+
+
+
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="row" style="align-items: center;">
+                            <div class="col-lg-10">
+                                <nav class="">
+                                    
+                                    @using (Html.BeginForm("SearchNews", "Categories"))
+                                    {
+                                        <div class="form-inline">
+                                            <input class="search-input mr-sm-2" type="search" name="searchKey" placeholder="Từ khóa tìm kiếm"
+                                                   aria-label="Search">
+                                            <button class="search-btn-submit" type="submit">
+                                                <i class="bi bi-search"></i>
+                                            </button>
+                                        </div>
+                                    }
+                                </nav>
+                            </div>
+                            <div class="col-lg-2 login" style="display: flex; align-items: center; font-size: 30px;">
+                                @if (user == null)
+                                {
+                                    <!-- login btn -->
+                                    <a href="@Url.Action("Login","LoginRegister")">
+                                        <i class="bi bi-person-fill"></i>
+                                    </a>
+                                    <!-- login btn -->
+                                }
+                                else
+                                {
+                                    <div class="dropdown show">
+                                        <a class="" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown"
+                                           aria-haspopup="true" aria-expanded="false">
+                                            <img class="avatar-cicle" src="~/Images/avatar.jpg" alt="">
+                                        </a>
+
+                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                            <a class="dropdown-item" href="#" style="color: #000;">Thông tin tài khoản</a>
+                                            <a class="dropdown-item" href="@Url.Action("GetReadLaterList","News", new { idNguoiDung = user.IDNguoiDung })" style="color: #000;">Bài viết lưu trữ</a>
+                                            <a class="dropdown-item" href="@Url.Action("LogOut","LoginRegister")" style="color: #000;"><i class="bi bi-box-arrow-right"></i> Đăng xuất</a>
+
+
+                                        </div>
+                                    </div>
+
+
+                                }
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end-header -->
+    <!-- container-news -->
+    <div class="container" style="margin-top: 30px; margin-bottom: 30px;">
+        @RenderBody()
+    </div>
+
+
+    <div class="container-fluit footer">
+        <div class="container">
+            <img src="~/Images/logo2.png" class="logo2" alt="">
+
+            <div class="row">
+                <div class="col-lg-4" style="padding: 0px 15px;">
+                    <h5>Kênh thông tin thương mại điện tử</h5><br>
+                    <p>Giấy Phép số: AAAA do Sở Thông Tin và Truyền Thông Thành Phố Hồ Chí Minh cấp ngày 15/05/1956</p>
+                    <p>Tổng Biên Tập: Nguyễn Văn A</p>
+                    <p>Chịu trách nhiệm nội dung: Nguyễn Thị B</p>
+
+                </div>
+                <div class="row-lg-4" style="font-size: 15px;">
+                    <div style="display: flex;">
+                        <i class="bi bi-house-door-fill"></i>
+                        <span style="margin-left: 10px;">campus 1</span>
+                    </div>
+                    <div style="display: flex;">
+                        <i class="bi bi-geo-alt-fill"></i>
+                        <span style="margin-left: 10px;">828 Sư Vạn Hạnh, Q10, Tp HCM</span>
+                    </div>
+                    <div style="display: flex;">
+                        <i class="bi bi-telephone-fill"></i>
+                        <span style="margin-left: 10px;">Hotline : 01234574</span>
+                    </div>
+
+                    <div style="display: flex; margin-top: 10px;" class="infor-publish">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Facebook_icon.svg/2048px-Facebook_icon.svg.png" alt="">
+                        <img src="https://png.pngtree.com/png-vector/20221018/ourmid/pngtree-youtube-social-media-round-icon-png-image_6315993.png" alt="">
+                        <img src="https://cdn-icons-png.flaticon.com/512/4138/4138151.png" alt="">
+                    </div>
+
+                </div>
+                <div class="row-lg-4" style="font-size: 15px; padding: 0px 100px;">
+                    <div style="display: flex;">
+                        <i class="bi bi-cloud-fill"></i>
+                        <span style="margin-left: 10px;">Hợp tác nội dung : abc@gmail.com</span>
+                    </div>
+                    <div style="display: flex;">
+                        <i class="bi bi-geo-alt-fill"></i>
+                        <span style="margin-left: 10px;">Hợp tác quảng cáo : xyz@gmail.com</span>
+                    </div>
+
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
+    <script src="~/Scripts/owl.carousel.min.js"></script>
+    <script src="~/Scripts/owlcarousel.custom.js"></script>
+    <script src="~/Scripts/main.js"></script>
+</body>
+
+</html>

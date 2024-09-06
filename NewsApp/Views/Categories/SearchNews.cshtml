@@ -1,0 +1,68 @@
+﻿
+@{
+    ViewBag.Title = "SearchNews";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="row">
+    <div class="col-lg-9">
+
+
+        <div class="news-list" style="margin: 80px 0px;">
+
+            <div class="title-news">
+                <span>Kết quả tìm kiếm cho  "@ViewBag.SearchKey"</span>
+            </div>
+
+            @foreach (var item in ViewBag.SearchResult)
+            {
+                <!-- new-item -->
+                <div class="new-item">
+                    <a href="@Url.Action("Index","News",  new { id = item.IDTinTuc })">
+                        <img src="~/Images/@item.HinhAnh" alt="">
+                        <div class="new-display-content">
+
+                            <h5 style="margin-bottom: 15px;" id="truncated-text-80">
+                                @item.TieuDe
+                            </h5>
+
+                            <p class="card-text">
+                                @item.NoiDung
+                            </p>
+                            <small style="color: gray;">@item.NgayDang</small>
+
+                        </div>
+
+                    </a>
+                </div>
+                <!-- end new-item -->
+            }
+
+
+
+        </div>
+
+
+    </div>
+    <div class="col-lg-3">
+        <div class="advertisement">
+            <div style="margin-bottom: 10px;">
+                <a href="@ViewBag.QuangCao[0].Link">
+                    <img src="~/Images/@ViewBag.QuangCao[0].HinhAnhQuangCao" alt="">
+
+                </a>
+            </div>
+            <div style="margin-bottom: 10px;">
+                <a href="@ViewBag.QuangCao[1].Link">
+                    <img src="~/Images/@ViewBag.QuangCao[1].HinhAnhQuangCao" alt="">
+
+                </a>
+            </div>
+
+
+        </div>
+
+
+    </div>
+</div>
+<!-- end-container-news -->

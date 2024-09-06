@@ -1,0 +1,158 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="NewsDBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="AdminAccount">
+    <Key>
+      <PropertyRef Name="IDAccount" />
+    </Key>
+    <Property Name="IDAccount" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Email" Type="nvarchar" MaxLength="50" />
+    <Property Name="Password" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="BinhLuan">
+    <Key>
+      <PropertyRef Name="IDBinhLuan" />
+    </Key>
+    <Property Name="IDBinhLuan" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="IDTinTuc" Type="int" />
+    <Property Name="IDNguoiDung" Type="int" />
+    <Property Name="NoiDung" Type="nvarchar" MaxLength="500" />
+    <Property Name="NgayBinhLuan" Type="datetime" />
+  </EntityType>
+  <EntityType Name="DanhMuc">
+    <Key>
+      <PropertyRef Name="IDDanhMuc" />
+    </Key>
+    <Property Name="IDDanhMuc" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TenDanhMuc" Type="nvarchar" MaxLength="250" />
+  </EntityType>
+  <EntityType Name="NguoiDung">
+    <Key>
+      <PropertyRef Name="IDNguoiDung" />
+    </Key>
+    <Property Name="IDNguoiDung" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TenNguoiDung" Type="nvarchar" MaxLength="50" />
+    <Property Name="Email" Type="nvarchar" MaxLength="50" />
+    <Property Name="MatKhau" Type="nvarchar" MaxLength="50" />
+    <Property Name="NgayDangKy" Type="datetime" />
+  </EntityType>
+  <EntityType Name="QuangCao">
+    <Key>
+      <PropertyRef Name="IDQuangCao" />
+    </Key>
+    <Property Name="IDQuangCao" Type="int" Nullable="false" />
+    <Property Name="Link" Type="nvarchar" MaxLength="250" />
+    <Property Name="HinhAnhQuangCao" Type="nvarchar" MaxLength="250" />
+  </EntityType>
+  <EntityType Name="TinTuc">
+    <Key>
+      <PropertyRef Name="IDTinTuc" />
+    </Key>
+    <Property Name="IDTinTuc" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TieuDe" Type="nvarchar" MaxLength="500" />
+    <Property Name="MoTa" Type="nvarchar" MaxLength="500" />
+    <Property Name="NoiDung" Type="nvarchar" MaxLength="2000" />
+    <Property Name="HinhAnh" Type="nvarchar" MaxLength="250" />
+    <Property Name="NgayDang" Type="datetime" />
+    <Property Name="NoiBat" Type="bit" />
+    <Property Name="Nguon" Type="nvarchar" MaxLength="50" />
+    <Property Name="IDDanhMuc" Type="int" Nullable="false" />
+    <Property Name="LuotXem" Type="int" />
+  </EntityType>
+  <EntityType Name="XemSau">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="IDNguoiDung" Type="int" />
+    <Property Name="IDTinTuc" Type="int" />
+  </EntityType>
+  <Association Name="FK_BinhLuan_NguoiDung">
+    <End Role="NguoiDung" Type="Self.NguoiDung" Multiplicity="0..1" />
+    <End Role="BinhLuan" Type="Self.BinhLuan" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="NguoiDung">
+        <PropertyRef Name="IDNguoiDung" />
+      </Principal>
+      <Dependent Role="BinhLuan">
+        <PropertyRef Name="IDNguoiDung" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_BinhLuan_TinTuc">
+    <End Role="TinTuc" Type="Self.TinTuc" Multiplicity="0..1" />
+    <End Role="BinhLuan" Type="Self.BinhLuan" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TinTuc">
+        <PropertyRef Name="IDTinTuc" />
+      </Principal>
+      <Dependent Role="BinhLuan">
+        <PropertyRef Name="IDTinTuc" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TinTuc_DanhMuc">
+    <End Role="DanhMuc" Type="Self.DanhMuc" Multiplicity="1" />
+    <End Role="TinTuc" Type="Self.TinTuc" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="DanhMuc">
+        <PropertyRef Name="IDDanhMuc" />
+      </Principal>
+      <Dependent Role="TinTuc">
+        <PropertyRef Name="IDDanhMuc" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_XemSau_NguoiDung">
+    <End Role="NguoiDung" Type="Self.NguoiDung" Multiplicity="0..1" />
+    <End Role="XemSau" Type="Self.XemSau" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="NguoiDung">
+        <PropertyRef Name="IDNguoiDung" />
+      </Principal>
+      <Dependent Role="XemSau">
+        <PropertyRef Name="IDNguoiDung" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_XemSau_TinTuc">
+    <End Role="TinTuc" Type="Self.TinTuc" Multiplicity="0..1" />
+    <End Role="XemSau" Type="Self.XemSau" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TinTuc">
+        <PropertyRef Name="IDTinTuc" />
+      </Principal>
+      <Dependent Role="XemSau">
+        <PropertyRef Name="IDTinTuc" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="NewsDBModelStoreContainer">
+    <EntitySet Name="AdminAccount" EntityType="Self.AdminAccount" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="BinhLuan" EntityType="Self.BinhLuan" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DanhMuc" EntityType="Self.DanhMuc" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="NguoiDung" EntityType="Self.NguoiDung" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="QuangCao" EntityType="Self.QuangCao" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TinTuc" EntityType="Self.TinTuc" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="XemSau" EntityType="Self.XemSau" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_BinhLuan_NguoiDung" Association="Self.FK_BinhLuan_NguoiDung">
+      <End Role="NguoiDung" EntitySet="NguoiDung" />
+      <End Role="BinhLuan" EntitySet="BinhLuan" />
+    </AssociationSet>
+    <AssociationSet Name="FK_BinhLuan_TinTuc" Association="Self.FK_BinhLuan_TinTuc">
+      <End Role="TinTuc" EntitySet="TinTuc" />
+      <End Role="BinhLuan" EntitySet="BinhLuan" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TinTuc_DanhMuc" Association="Self.FK_TinTuc_DanhMuc">
+      <End Role="DanhMuc" EntitySet="DanhMuc" />
+      <End Role="TinTuc" EntitySet="TinTuc" />
+    </AssociationSet>
+    <AssociationSet Name="FK_XemSau_NguoiDung" Association="Self.FK_XemSau_NguoiDung">
+      <End Role="NguoiDung" EntitySet="NguoiDung" />
+      <End Role="XemSau" EntitySet="XemSau" />
+    </AssociationSet>
+    <AssociationSet Name="FK_XemSau_TinTuc" Association="Self.FK_XemSau_TinTuc">
+      <End Role="TinTuc" EntitySet="TinTuc" />
+      <End Role="XemSau" EntitySet="XemSau" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

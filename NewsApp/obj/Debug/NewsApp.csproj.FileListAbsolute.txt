@@ -1,0 +1,166 @@
+C:\Users\ASUS\Desktop\Đồ án làm thuê\NewsApp\NewsApp\NewsApp\bin\NewsApp.dll.config
+C:\Users\ASUS\Desktop\Đồ án làm thuê\NewsApp\NewsApp\NewsApp\bin\NewsApp.dll
+C:\Users\ASUS\Desktop\Đồ án làm thuê\NewsApp\NewsApp\NewsApp\bin\NewsApp.pdb
+C:\Users\ASUS\Desktop\Đồ án làm thuê\NewsApp\NewsApp\NewsApp\bin\roslyn\csc.exe
+C:\Users\ASUS\Desktop\Đồ án làm thuê\NewsApp\NewsApp\NewsApp\bin\roslyn\csc.exe.config
+C:\Users\ASUS\Desktop\Đồ án làm thuê\NewsApp\NewsApp\NewsApp\bin\roslyn\csc.rsp
+C:\Users\ASUS\Desktop\Đồ án làm thuê\NewsApp\NewsApp\NewsApp\bin\roslyn\csi.exe
+C:\Users\ASUS\Desktop\Đồ án làm thuê\NewsApp\NewsApp\NewsApp\bin\roslyn\csi.exe.config
+C:\Users\ASUS\Desktop\Đồ án làm thuê\NewsApp\NewsApp\NewsApp\bin\roslyn\csi.rsp
+C:\Users\ASUS\Desktop\Đồ án làm thuê\NewsApp\NewsApp\NewsApp\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\ASUS\Desktop\Đồ án làm thuê\NewsApp\NewsApp\NewsApp\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\ASUS\Desktop\Đồ án làm thuê\NewsApp\NewsApp\NewsApp\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\ASUS\Desktop\Đồ án làm thuê\NewsApp\NewsApp\NewsApp\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\ASUS\Desktop\Đồ án làm thuê\NewsApp\NewsApp\NewsApp\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\ASUS\Desktop\Đồ án làm thuê\NewsApp\NewsApp\NewsApp\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\ASUS\Desktop\Đồ án làm thuê\NewsApp\NewsApp\NewsApp\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\ASUS\Desktop\Đồ án làm thuê\NewsApp\NewsApp\NewsApp\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\ASUS\Desktop\Đồ án làm thuê\NewsApp\NewsApp\NewsApp\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\ASUS\Desktop\Đồ án làm thuê\NewsApp\NewsApp\NewsApp\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\ASUS\Desktop\Đồ án làm thuê\NewsApp\NewsApp\NewsApp\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\ASUS\Desktop\Đồ án làm thuê\NewsApp\NewsApp\NewsApp\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\ASUS\Desktop\Đồ án làm thuê\NewsApp\NewsApp\NewsApp\bin\roslyn\System.AppContext.dll
+C:\Users\ASUS\Desktop\Đồ án làm thuê\NewsApp\NewsApp\NewsApp\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\ASUS\Desktop\Đồ án làm thuê\NewsApp\NewsApp\NewsApp\bin\roslyn\System.Console.dll
+C:\Users\ASUS\Desktop\Đồ án làm thuê\NewsApp\NewsApp\NewsApp\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\ASUS\Desktop\Đồ án làm thuê\NewsApp\NewsApp\NewsApp\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\ASUS\Desktop\Đồ án làm thuê\NewsApp\NewsApp\NewsApp\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\ASUS\Desktop\Đồ án làm thuê\NewsApp\NewsApp\NewsApp\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\ASUS\Desktop\Đồ án làm thuê\NewsApp\NewsApp\NewsApp\bin\roslyn\System.IO.Compression.dll
+C:\Users\ASUS\Desktop\Đồ án làm thuê\NewsApp\NewsApp\NewsApp\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\ASUS\Desktop\Đồ án làm thuê\NewsApp\NewsApp\NewsApp\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\ASUS\Desktop\Đồ án làm thuê\NewsApp\NewsApp\NewsApp\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\ASUS\Desktop\Đồ án làm thuê\NewsApp\NewsApp\NewsApp\bin\roslyn\System.Net.Http.dll
+C:\Users\ASUS\Desktop\Đồ án làm thuê\NewsApp\NewsApp\NewsApp\bin\roslyn\System.Net.Sockets.dll
+C:\Users\ASUS\Desktop\Đồ án làm thuê\NewsApp\NewsApp\NewsApp\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\ASUS\Desktop\Đồ án làm thuê\NewsApp\NewsApp\NewsApp\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\ASUS\Desktop\Đồ án làm thuê\NewsApp\NewsApp\NewsApp\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\ASUS\Desktop\Đồ án làm thuê\NewsApp\NewsApp\NewsApp\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\ASUS\Desktop\Đồ án làm thuê\NewsApp\NewsApp\NewsApp\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\ASUS\Desktop\Đồ án làm thuê\NewsApp\NewsApp\NewsApp\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\ASUS\Desktop\Đồ án làm thuê\NewsApp\NewsApp\NewsApp\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\ASUS\Desktop\Đồ án làm thuê\NewsApp\NewsApp\NewsApp\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\ASUS\Desktop\Đồ án làm thuê\NewsApp\NewsApp\NewsApp\bin\roslyn\System.ValueTuple.dll
+C:\Users\ASUS\Desktop\Đồ án làm thuê\NewsApp\NewsApp\NewsApp\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\ASUS\Desktop\Đồ án làm thuê\NewsApp\NewsApp\NewsApp\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\ASUS\Desktop\Đồ án làm thuê\NewsApp\NewsApp\NewsApp\bin\roslyn\System.Xml.XPath.dll
+C:\Users\ASUS\Desktop\Đồ án làm thuê\NewsApp\NewsApp\NewsApp\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\ASUS\Desktop\Đồ án làm thuê\NewsApp\NewsApp\NewsApp\bin\roslyn\vbc.exe
+C:\Users\ASUS\Desktop\Đồ án làm thuê\NewsApp\NewsApp\NewsApp\bin\roslyn\vbc.exe.config
+C:\Users\ASUS\Desktop\Đồ án làm thuê\NewsApp\NewsApp\NewsApp\bin\roslyn\vbc.rsp
+C:\Users\ASUS\Desktop\Đồ án làm thuê\NewsApp\NewsApp\NewsApp\bin\roslyn\VBCSCompiler.exe
+C:\Users\ASUS\Desktop\Đồ án làm thuê\NewsApp\NewsApp\NewsApp\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\ASUS\Desktop\Đồ án làm thuê\NewsApp\NewsApp\NewsApp\bin\Antlr3.Runtime.dll
+C:\Users\ASUS\Desktop\Đồ án làm thuê\NewsApp\NewsApp\NewsApp\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\ASUS\Desktop\Đồ án làm thuê\NewsApp\NewsApp\NewsApp\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\ASUS\Desktop\Đồ án làm thuê\NewsApp\NewsApp\NewsApp\bin\Newtonsoft.Json.dll
+C:\Users\ASUS\Desktop\Đồ án làm thuê\NewsApp\NewsApp\NewsApp\bin\System.Web.Helpers.dll
+C:\Users\ASUS\Desktop\Đồ án làm thuê\NewsApp\NewsApp\NewsApp\bin\System.Web.Mvc.dll
+C:\Users\ASUS\Desktop\Đồ án làm thuê\NewsApp\NewsApp\NewsApp\bin\System.Web.Optimization.dll
+C:\Users\ASUS\Desktop\Đồ án làm thuê\NewsApp\NewsApp\NewsApp\bin\System.Web.Razor.dll
+C:\Users\ASUS\Desktop\Đồ án làm thuê\NewsApp\NewsApp\NewsApp\bin\System.Web.WebPages.Deployment.dll
+C:\Users\ASUS\Desktop\Đồ án làm thuê\NewsApp\NewsApp\NewsApp\bin\System.Web.WebPages.dll
+C:\Users\ASUS\Desktop\Đồ án làm thuê\NewsApp\NewsApp\NewsApp\bin\System.Web.WebPages.Razor.dll
+C:\Users\ASUS\Desktop\Đồ án làm thuê\NewsApp\NewsApp\NewsApp\bin\WebGrease.dll
+C:\Users\ASUS\Desktop\Đồ án làm thuê\NewsApp\NewsApp\NewsApp\bin\System.Web.Helpers.xml
+C:\Users\ASUS\Desktop\Đồ án làm thuê\NewsApp\NewsApp\NewsApp\bin\System.Web.Mvc.xml
+C:\Users\ASUS\Desktop\Đồ án làm thuê\NewsApp\NewsApp\NewsApp\bin\System.Web.Optimization.xml
+C:\Users\ASUS\Desktop\Đồ án làm thuê\NewsApp\NewsApp\NewsApp\bin\System.Web.Razor.xml
+C:\Users\ASUS\Desktop\Đồ án làm thuê\NewsApp\NewsApp\NewsApp\bin\System.Web.WebPages.xml
+C:\Users\ASUS\Desktop\Đồ án làm thuê\NewsApp\NewsApp\NewsApp\bin\System.Web.WebPages.Deployment.xml
+C:\Users\ASUS\Desktop\Đồ án làm thuê\NewsApp\NewsApp\NewsApp\bin\System.Web.WebPages.Razor.xml
+C:\Users\ASUS\Desktop\Đồ án làm thuê\NewsApp\NewsApp\NewsApp\bin\Newtonsoft.Json.xml
+C:\Users\ASUS\Desktop\Đồ án làm thuê\NewsApp\NewsApp\NewsApp\bin\Antlr3.Runtime.pdb
+C:\Users\ASUS\Desktop\Đồ án làm thuê\NewsApp\NewsApp\NewsApp\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\ASUS\Desktop\Đồ án làm thuê\NewsApp\NewsApp\NewsApp\obj\Debug\NewsApp.csproj.AssemblyReference.cache
+C:\Users\ASUS\Desktop\Đồ án làm thuê\NewsApp\NewsApp\NewsApp\obj\Debug\NewsApp.csproj.CoreCompileInputs.cache
+C:\Users\ASUS\Desktop\Đồ án làm thuê\NewsApp\NewsApp\NewsApp\obj\Debug\NewsApp.csproj.CopyComplete
+C:\Users\ASUS\Desktop\Đồ án làm thuê\NewsApp\NewsApp\NewsApp\obj\Debug\NewsApp.dll
+C:\Users\ASUS\Desktop\Đồ án làm thuê\NewsApp\NewsApp\NewsApp\obj\Debug\NewsApp.pdb
+C:\Users\ASUS\Desktop\Đồ án làm thuê\NewsApp\NewsApp\NewsApp\bin\EntityFramework.dll
+C:\Users\ASUS\Desktop\Đồ án làm thuê\NewsApp\NewsApp\NewsApp\bin\EntityFramework.SqlServer.dll
+C:\Users\ASUS\Desktop\Đồ án làm thuê\NewsApp\NewsApp\NewsApp\bin\EntityFramework.xml
+C:\Users\ASUS\Desktop\Đồ án làm thuê\NewsApp\NewsApp\NewsApp\bin\EntityFramework.SqlServer.xml
+C:\Users\Hoang_Phu\Desktop\NewsApp\NewsApp\bin\NewsApp.dll.config
+C:\Users\Hoang_Phu\Desktop\NewsApp\NewsApp\bin\NewsApp.dll
+C:\Users\Hoang_Phu\Desktop\NewsApp\NewsApp\bin\NewsApp.pdb
+C:\Users\Hoang_Phu\Desktop\NewsApp\NewsApp\bin\roslyn\csc.exe
+C:\Users\Hoang_Phu\Desktop\NewsApp\NewsApp\bin\roslyn\csc.exe.config
+C:\Users\Hoang_Phu\Desktop\NewsApp\NewsApp\bin\roslyn\csc.rsp
+C:\Users\Hoang_Phu\Desktop\NewsApp\NewsApp\bin\roslyn\csi.exe
+C:\Users\Hoang_Phu\Desktop\NewsApp\NewsApp\bin\roslyn\csi.exe.config
+C:\Users\Hoang_Phu\Desktop\NewsApp\NewsApp\bin\roslyn\csi.rsp
+C:\Users\Hoang_Phu\Desktop\NewsApp\NewsApp\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Hoang_Phu\Desktop\NewsApp\NewsApp\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Hoang_Phu\Desktop\NewsApp\NewsApp\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\Hoang_Phu\Desktop\NewsApp\NewsApp\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Hoang_Phu\Desktop\NewsApp\NewsApp\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\Hoang_Phu\Desktop\NewsApp\NewsApp\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Hoang_Phu\Desktop\NewsApp\NewsApp\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Hoang_Phu\Desktop\NewsApp\NewsApp\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\Hoang_Phu\Desktop\NewsApp\NewsApp\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\Hoang_Phu\Desktop\NewsApp\NewsApp\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\Hoang_Phu\Desktop\NewsApp\NewsApp\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Hoang_Phu\Desktop\NewsApp\NewsApp\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\Hoang_Phu\Desktop\NewsApp\NewsApp\bin\roslyn\System.AppContext.dll
+C:\Users\Hoang_Phu\Desktop\NewsApp\NewsApp\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Hoang_Phu\Desktop\NewsApp\NewsApp\bin\roslyn\System.Console.dll
+C:\Users\Hoang_Phu\Desktop\NewsApp\NewsApp\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Hoang_Phu\Desktop\NewsApp\NewsApp\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\Hoang_Phu\Desktop\NewsApp\NewsApp\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\Hoang_Phu\Desktop\NewsApp\NewsApp\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\Hoang_Phu\Desktop\NewsApp\NewsApp\bin\roslyn\System.IO.Compression.dll
+C:\Users\Hoang_Phu\Desktop\NewsApp\NewsApp\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\Hoang_Phu\Desktop\NewsApp\NewsApp\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\Hoang_Phu\Desktop\NewsApp\NewsApp\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\Hoang_Phu\Desktop\NewsApp\NewsApp\bin\roslyn\System.Net.Http.dll
+C:\Users\Hoang_Phu\Desktop\NewsApp\NewsApp\bin\roslyn\System.Net.Sockets.dll
+C:\Users\Hoang_Phu\Desktop\NewsApp\NewsApp\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Hoang_Phu\Desktop\NewsApp\NewsApp\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\Hoang_Phu\Desktop\NewsApp\NewsApp\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\Hoang_Phu\Desktop\NewsApp\NewsApp\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\Hoang_Phu\Desktop\NewsApp\NewsApp\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\Hoang_Phu\Desktop\NewsApp\NewsApp\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\Hoang_Phu\Desktop\NewsApp\NewsApp\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\Hoang_Phu\Desktop\NewsApp\NewsApp\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\Hoang_Phu\Desktop\NewsApp\NewsApp\bin\roslyn\System.ValueTuple.dll
+C:\Users\Hoang_Phu\Desktop\NewsApp\NewsApp\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\Hoang_Phu\Desktop\NewsApp\NewsApp\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\Hoang_Phu\Desktop\NewsApp\NewsApp\bin\roslyn\System.Xml.XPath.dll
+C:\Users\Hoang_Phu\Desktop\NewsApp\NewsApp\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\Hoang_Phu\Desktop\NewsApp\NewsApp\bin\roslyn\vbc.exe
+C:\Users\Hoang_Phu\Desktop\NewsApp\NewsApp\bin\roslyn\vbc.exe.config
+C:\Users\Hoang_Phu\Desktop\NewsApp\NewsApp\bin\roslyn\vbc.rsp
+C:\Users\Hoang_Phu\Desktop\NewsApp\NewsApp\bin\roslyn\VBCSCompiler.exe
+C:\Users\Hoang_Phu\Desktop\NewsApp\NewsApp\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Hoang_Phu\Desktop\NewsApp\NewsApp\bin\Antlr3.Runtime.dll
+C:\Users\Hoang_Phu\Desktop\NewsApp\NewsApp\bin\EntityFramework.dll
+C:\Users\Hoang_Phu\Desktop\NewsApp\NewsApp\bin\EntityFramework.SqlServer.dll
+C:\Users\Hoang_Phu\Desktop\NewsApp\NewsApp\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Hoang_Phu\Desktop\NewsApp\NewsApp\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Hoang_Phu\Desktop\NewsApp\NewsApp\bin\Newtonsoft.Json.dll
+C:\Users\Hoang_Phu\Desktop\NewsApp\NewsApp\bin\System.Web.Helpers.dll
+C:\Users\Hoang_Phu\Desktop\NewsApp\NewsApp\bin\System.Web.Mvc.dll
+C:\Users\Hoang_Phu\Desktop\NewsApp\NewsApp\bin\System.Web.Optimization.dll
+C:\Users\Hoang_Phu\Desktop\NewsApp\NewsApp\bin\System.Web.Razor.dll
+C:\Users\Hoang_Phu\Desktop\NewsApp\NewsApp\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Hoang_Phu\Desktop\NewsApp\NewsApp\bin\System.Web.WebPages.dll
+C:\Users\Hoang_Phu\Desktop\NewsApp\NewsApp\bin\System.Web.WebPages.Razor.dll
+C:\Users\Hoang_Phu\Desktop\NewsApp\NewsApp\bin\WebGrease.dll
+C:\Users\Hoang_Phu\Desktop\NewsApp\NewsApp\bin\EntityFramework.xml
+C:\Users\Hoang_Phu\Desktop\NewsApp\NewsApp\bin\EntityFramework.SqlServer.xml
+C:\Users\Hoang_Phu\Desktop\NewsApp\NewsApp\bin\System.Web.Helpers.xml
+C:\Users\Hoang_Phu\Desktop\NewsApp\NewsApp\bin\System.Web.Mvc.xml
+C:\Users\Hoang_Phu\Desktop\NewsApp\NewsApp\bin\System.Web.Optimization.xml
+C:\Users\Hoang_Phu\Desktop\NewsApp\NewsApp\bin\System.Web.Razor.xml
+C:\Users\Hoang_Phu\Desktop\NewsApp\NewsApp\bin\System.Web.WebPages.xml
+C:\Users\Hoang_Phu\Desktop\NewsApp\NewsApp\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Hoang_Phu\Desktop\NewsApp\NewsApp\bin\System.Web.WebPages.Razor.xml
+C:\Users\Hoang_Phu\Desktop\NewsApp\NewsApp\bin\Newtonsoft.Json.xml
+C:\Users\Hoang_Phu\Desktop\NewsApp\NewsApp\bin\Antlr3.Runtime.pdb
+C:\Users\Hoang_Phu\Desktop\NewsApp\NewsApp\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Hoang_Phu\Desktop\NewsApp\NewsApp\obj\Debug\NewsApp.csproj.AssemblyReference.cache
+C:\Users\Hoang_Phu\Desktop\NewsApp\NewsApp\obj\Debug\NewsApp.csproj.CoreCompileInputs.cache
+C:\Users\Hoang_Phu\Desktop\NewsApp\NewsApp\obj\Debug\NewsApp.dll
+C:\Users\Hoang_Phu\Desktop\NewsApp\NewsApp\obj\Debug\NewsApp.pdb
+C:\Users\Hoang_Phu\Desktop\NewsApp\NewsApp\obj\Debug\NewsApp.csproj.Up2Date

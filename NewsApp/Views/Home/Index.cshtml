@@ -1,0 +1,164 @@
+﻿<div class="row">
+    <div class="col-lg-9">
+
+        
+
+        <!-- hot-new -->
+        <div class="hot-news">
+            <div class="row">
+
+
+
+                @for (int i = 0; i < 2; i++)
+                {
+                    <div class="col-lg-6 hot-new-item">
+                        <a  href="@Url.Action("Index","News",  new { id = ViewBag.TinNoiBat[i].IDTinTuc })">
+                            <img src="~/Images/@ViewBag.TinNoiBat[i].HinhAnh" alt="">
+                            <h5 class="truncated-text-80">
+                                @ViewBag.TinNoiBat[i].TieuDe
+                            </h5>
+                        </a>
+                    </div>
+                }
+
+
+
+            </div>
+            <!-- carousel-new -->
+            <div class="how-news-carousel">
+                <div class="owl-carousel">
+
+                    @for (int i = 2; i < ViewBag.TinNoiBat.Count; i++)
+                    {
+                        <!-- item -->
+                        <div class="element hot-new-slide-item">
+                            <div class="">
+                                <a  href="@Url.Action("Index","News",  new { id = ViewBag.TinNoiBat[i].IDTinTuc })">
+                                    <img src="~/Images/@ViewBag.TinNoiBat[i].HinhAnh" alt="">
+                                    <h5 id="truncated-text-100">
+                                        @ViewBag.TinNoiBat[i].TieuDe
+
+                                    </h5>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- end-item -->
+                    }
+                </div>
+            </div>
+            <!-- end carousel-new -->
+
+        </div>
+        <!-- end-hot-new -->
+
+        <div class="news-list" style="margin: 80px 0px;">
+
+            <div class="title-news">
+                <span>Tin tức tuần này</span>
+                <a href="@Url.Action("GetNewsToWeek","Categories")">Xem thêm</a>
+            </div>
+
+            @foreach (var item in ViewBag.ToWeek)
+            {
+                <!-- new-item -->
+                <div class="new-item">
+                    <a  href="@Url.Action("Index","News",  new { id = item.IDTinTuc })">
+                        <img src="~/Images/@item.HinhAnh" alt="">
+                        <div class="new-display-content">
+
+                            <h5 style="margin-bottom: 15px;" id="truncated-text-80">
+                                @item.TieuDe
+                            </h5>
+
+                            <p class="card-text">
+                                @item.NoiDung
+                            </p>
+                            <small style="color: gray;">23-7-2023</small>
+
+                        </div>
+
+                    </a>
+                </div>
+                <!-- end new-item -->
+            }
+
+
+
+        </div>
+
+        <div class="news-list" style="margin: 80px 0px;">
+
+            <div class="title-news">
+                <span>@ViewBag.CategoryName</span>
+                <a href="@Url.Action("GetNewsCategories", "Categories", new {idCate = ViewBag.DanhMucID})">Xem thêm</a>
+            </div>
+            <div class="owl-carousel">
+
+                <!-- end-item -->
+                @foreach (var item in ViewBag.DanhMuc)
+                {
+                    <!-- item -->
+                    <div class="element hot-new-slide-item">
+                        <div class="">
+                            <a  href="@Url.Action("Index","News",  new { id = item.IDTinTuc })">
+                                <img src="~/Images/@item.HinhAnh" alt="">
+                                <h6 class="card-text">
+                                    @item.MoTa
+                                </h6>
+                            </a>
+                        </div>
+                    </div>
+                }
+
+
+            </div>
+
+
+        </div>
+    </div>
+    <div class="col-lg-3">
+        <div class="advertisement">
+            <div style="margin-bottom: 10px;">
+                <a href="@ViewBag.QuangCao[0].Link">
+                    <img src="~/Images/@ViewBag.QuangCao[0].HinhAnhQuangCao" alt="">
+
+                </a>
+            </div>
+            <div style="margin-bottom: 10px;">
+                <a href="@ViewBag.QuangCao[1].Link">
+                    <img src="~/Images/@ViewBag.QuangCao[1].HinhAnhQuangCao" alt="">
+
+                </a>
+            </div>
+
+
+        </div>
+        <div class="interested-new">
+            <div class="title-news-right">
+                <span>Đáng chú ý</span>
+
+            </div>
+
+            @foreach (var item in ViewBag.Interesting)
+            {
+                <!-- new-item -->
+
+                <div class="new-item-right">
+                    <a href="@Url.Action("Index","News",  new { id = item.IDTinTuc })">
+                        <img src="~/Images/@item.HinhAnh" alt="">
+                        <div class="new-display-content">
+
+                            <h6 class="card-text" style="margin-bottom: 15px;" id="truncated-text-80">
+                                @item.TieuDe
+                            </h6>
+                        </div>
+
+                    </a>
+                </div>
+                <!-- end new-item -->
+            }
+        </div>
+
+    </div>
+</div>
+<!-- end-container-news -->

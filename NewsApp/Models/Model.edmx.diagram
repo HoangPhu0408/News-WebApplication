@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="2a4877ae7a37458899cbf2edb9acb782" Name="Diagram1" ZoomLevel="83">
+        <EntityTypeShape EntityType="NewsDBModel.AdminAccount" Width="1.5" PointX="5.75" PointY="6.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="NewsDBModel.BinhLuan" Width="1.5" PointX="5.25" PointY="3.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="NewsDBModel.DanhMuc" Width="1.5" PointX="0.75" PointY="4" IsExpanded="true" />
+        <EntityTypeShape EntityType="NewsDBModel.NguoiDung" Width="1.5" PointX="3" PointY="7.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="NewsDBModel.QuangCao" Width="1.5" PointX="7.75" PointY="1.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="NewsDBModel.TinTuc" Width="1.5" PointX="3" PointY="3" IsExpanded="true" />
+        <EntityTypeShape EntityType="NewsDBModel.XemSau" Width="1.5" PointX="5.25" PointY="0.75" IsExpanded="true" />
+        <AssociationConnector Association="NewsDBModel.FK_BinhLuan_NguoiDung" ManuallyRouted="false" />
+        <AssociationConnector Association="NewsDBModel.FK_BinhLuan_TinTuc" ManuallyRouted="false" />
+        <AssociationConnector Association="NewsDBModel.FK_TinTuc_DanhMuc" ManuallyRouted="false" />
+        <AssociationConnector Association="NewsDBModel.FK_XemSau_NguoiDung" ManuallyRouted="false" />
+        <AssociationConnector Association="NewsDBModel.FK_XemSau_TinTuc" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
